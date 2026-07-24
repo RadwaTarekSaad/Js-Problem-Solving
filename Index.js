@@ -243,7 +243,7 @@ console.log("max in array is:",largestEx);
 
 
 
-//Q14.Write a function that takes an object and returns an array containing only its keys.
+// Q14.Write a function that takes an object and returns an array containing only its keys.
 
 function getKeys(obj){
 let objEntry=new Map(Object.entries(obj));
@@ -257,6 +257,25 @@ let user={
 }
 
 let userKeys=getKeys(user);
+console.log("The Keys Of An Object:",userKeys);
+
+
+//////another way to Q14
+
+function getKeysSecond(obj){
+    objKeys=[];
+for(let user in obj  ){
+    objKeys.push(user)
+   }
+ return objKeys;
+}
+
+let user={
+    name:"john",
+    age:30
+}
+
+let userKeys=getKeysSecond(user);
 console.log("The Keys Of An Object:",userKeys);
 
 
@@ -283,11 +302,12 @@ console.log("The Splitting Array :",splittingStr)
 
 // for Each ==> it loops on arrays,cannot use continue or break ,await in it,slower because it makes callback every time,
 // use it when you want to make the same function to each element in array and if i will not use break or continue or promise
+//it doesn't  wait until the process that takes time to end skip it.
 
 
 
 // for of  ==> it loops on any iterable obj or array...,i can use continue or break or await,faster,more flexible to use
-//  if i want to use continue or promise or break
+//  if i want to use continue or promise or break it wait until the process end then go to the next line
 
 
 
