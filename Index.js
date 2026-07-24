@@ -263,7 +263,7 @@ console.log("The Keys Of An Object:",userKeys);
 //////another way to Q14
 
 function getKeysSecond(obj){
-    objKeys=[];
+   let objKeys=[];
 for(let user in obj  ){
     objKeys.push(user)
    }
