@@ -270,13 +270,13 @@ for(let user in obj  ){
  return objKeys;
 }
 
-let user={
+let user2={
     name:"john",
     age:30
 }
 
-let userKeys=getKeysSecond(user);
-console.log("The Keys Of An Object:",userKeys);
+let userKeys2=getKeysSecond(user);
+console.log("The Keys Of An Object:",userKeys2);
 
 
 
