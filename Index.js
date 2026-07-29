@@ -208,7 +208,7 @@ let largest = arr.reduce((acc, current) => {
         max=current;
     }
     return max
-},0);
+},arr[0]);
 
 return largest;
 
@@ -220,18 +220,15 @@ console.log("largest Number in the array:" ,largestInArr);
 ////another way to Q13
 
 function theLargestNumberEx(arrEx){
-    let max=0;
+   let max=arrEx[0]
     for(let i=1;i<arrEx.length;i++){
        
-            if(arrEx[i]>arrEx[i+1]){
+            if(arrEx[i]>max){
             max=arrEx[i];
-            }else if(max<arrEx[i+1]){
-                max=arrEx[i+1]
-
+            
             }
-            
-            
         }
+        
 
     return max;
 
